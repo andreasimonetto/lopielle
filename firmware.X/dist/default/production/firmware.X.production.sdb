@@ -1,0 +1,763 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1788 ]
+[d frameptr 6 ]
+"187 /home/simonetto/lopielle/firmware.X/main.c
+[e E5904 . `uc
+OPLL_INST_USER 0
+OPLL_INST_VIOLIN 1
+OPLL_INST_GUITAR 2
+OPLL_INST_PIANO 3
+OPLL_INST_FLUTE 4
+OPLL_INST_CLARINET 5
+OPLL_INST_OBOE 6
+OPLL_INST_TRUMPET 7
+OPLL_INST_ORGAN 8
+OPLL_INST_HORN 9
+OPLL_INST_SYNTH 10
+OPLL_INST_HARP 11
+OPLL_INST_VIBRAPHONE 12
+OPLL_INST_BASS_SYNTH 13
+OPLL_INST_BASS_ACOUSTIC 14
+OPLL_INST_GUITAR_ELECTRIC 15
+]
+"486
+[e E5936 . `uc
+SYNTH_PARAM_CHANNEL 0
+SYNTH_PARAM_INSTRUMENT 1
+SYNTH_PARAM_CARRIER_ATTACK 2
+SYNTH_PARAM_CARRIER_DECAY 3
+SYNTH_PARAM_CARRIER_SUSTAIN 4
+SYNTH_PARAM_CARRIER_RELEASE 5
+SYNTH_PARAM_MODULATOR_ATTACK 6
+SYNTH_PARAM_MODULATOR_DECAY 7
+SYNTH_PARAM_MODULATOR_SUSTAIN 8
+SYNTH_PARAM_MODULATOR_RELEASE 9
+]
+"568
+[e E5979 . `uc
+CTL_ENCODER_A 1
+CTL_ENCODER_B 2
+CTL_ENCODER_BUTTON 4
+CTL_BUTTON1 8
+CTL_BUTTON2 16
+CTL_BUTTON3 32
+CTL_BUTTON4 64
+]
+"5 /opt/microchip/xc8/v2.00/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.00/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.4v  1 e 1 0 ]
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+"10 /opt/microchip/xc8/v2.00/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"12 /opt/microchip/xc8/v2.00/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v2.00/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.00/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 /home/simonetto/lopielle/firmware.X/main.c
+[v _sprintn sprintn `(uc  1 e 1 0 ]
+"112
+[v _opll_reset opll_reset `(v  1 e 1 0 ]
+"121
+[v _opll_write opll_write `(v  1 e 1 0 ]
+"189
+[v _opll_play opll_play `(v  1 e 1 0 ]
+"261
+[v _dpy_write_instruction dpy_write_instruction `(v  1 e 1 0 ]
+"273
+[v _dpy_write_data dpy_write_data `(v  1 e 1 0 ]
+"285
+[v _dpy_reset dpy_reset `(v  1 e 1 0 ]
+"297
+[v _dpy_cursor_show dpy_cursor_show `(v  1 e 1 0 ]
+"303
+[v _dpy_cursor_hide dpy_cursor_hide `(v  1 e 1 0 ]
+"309
+[v _dpy_cursor_move dpy_cursor_move `(v  1 e 1 0 ]
+"315
+[v _dpy_update dpy_update `(v  1 e 1 0 ]
+"370
+[v _ctl_status_update ctl_status_update `(v  1 e 1 0 ]
+[v i1_ctl_status_update ctl_status_update `(v  1 e 1 0 ]
+"382
+[v _ctl_status_reset ctl_status_reset `(v  1 e 1 0 ]
+"412
+[v _synth_param_change synth_param_change `(uc  1 e 1 0 ]
+"491
+[v _synth_param_snprint synth_param_snprint `(uc  1 e 1 0 ]
+"551
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"610
+[v _main main `(v  1 e 1 0 ]
+"75 /home/simonetto/lopielle/firmware.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"118
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(uc  1 e 1 0 ]
+"128
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"172
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"191
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"211
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+"215
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"52 /home/simonetto/lopielle/firmware.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /home/simonetto/lopielle/firmware.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"76
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"58 /home/simonetto/lopielle/firmware.X/mcc_generated_files/memory.c
+[v _FLASH_ReadWord FLASH_ReadWord `(us  1 e 2 0 ]
+"95
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"156
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"57 /home/simonetto/lopielle/firmware.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 /home/simonetto/lopielle/firmware.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"85 /home/simonetto/lopielle/firmware.X/mcc_generated_files/eusart.h
+[v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"86
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+[s S116 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 /opt/microchip/xc8/v2.00/pic/include/pic16f1788.h
+[s S125 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S130 . 1 `S116 1 . 1 0 `S125 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES130  1 e 1 @11 ]
+"499
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+[s S552 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"589
+[s S561 . 1 `uc 1 PORTC 1 0 :8:0 
+]
+[u S563 . 1 `S552 1 . 1 0 `S561 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES563  1 e 1 @14 ]
+[s S279 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"685
+[u S288 . 1 `S279 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES288  1 e 1 @17 ]
+"875
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"1195
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S656 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1215
+[s S665 . 1 `uc 1 TRISA 1 0 :8:0 
+]
+[u S667 . 1 `S656 1 . 1 0 `S665 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES667  1 e 1 @140 ]
+"1265
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1335
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1405
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+[s S258 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1451
+[u S267 . 1 `S258 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES267  1 e 1 @145 ]
+"1650
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S69 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1673
+[s S78 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S83 . 1 `S69 1 . 1 0 `S78 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES83  1 e 1 @149 ]
+"1790
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1849
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1907
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1979
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"2331
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S630 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"2351
+[s S639 . 1 `uc 1 LATA 1 0 :8:0 
+]
+[u S641 . 1 `S630 1 . 1 0 `S639 1 . 1 0 ]
+[v _LATAbits LATAbits `VES641  1 e 1 @268 ]
+"2401
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2471
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S481 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2491
+[s S490 . 1 `uc 1 LATC 1 0 :8:0 
+]
+[u S492 . 1 `S481 1 . 1 0 `S490 1 . 1 0 ]
+[v _LATCbits LATCbits `VES492  1 e 1 @270 ]
+"2855
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"3332
+[v _APFCON2 APFCON2 `VEuc  1 e 1 @284 ]
+"3358
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @285 ]
+"3676
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3741
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3805
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3874
+[v _EEADRL EEADRL `VEuc  1 e 1 @401 ]
+"3894
+[v _EEADRH EEADRH `VEuc  1 e 1 @402 ]
+"3921
+[v _EEDATL EEDATL `VEuc  1 e 1 @403 ]
+"3959
+[v _EEDATH EEDATH `VEuc  1 e 1 @404 ]
+[s S150 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3996
+[u S159 . 1 `S150 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES159  1 e 1 @405 ]
+"4041
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"4082
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"4136
+[v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
+"4197
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
+"4267
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"4321
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S386 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4347
+[u S395 . 1 `S386 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES395  1 e 1 @413 ]
+"4501
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+[s S364 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"4527
+[u S373 . 1 `S364 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES373  1 e 1 @414 ]
+"4681
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"4927
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"4997
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"5067
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"5137
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"6564
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"6634
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"6704
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+[s S682 . 1 `uc 1 IOCAF0 1 0 :1:0 
+`uc 1 IOCAF1 1 0 :1:1 
+`uc 1 IOCAF2 1 0 :1:2 
+`uc 1 IOCAF3 1 0 :1:3 
+`uc 1 IOCAF4 1 0 :1:4 
+`uc 1 IOCAF5 1 0 :1:5 
+`uc 1 IOCAF6 1 0 :1:6 
+`uc 1 IOCAF7 1 0 :1:7 
+]
+"7716
+[s S691 . 1 `uc 1 IOCAF 1 0 :8:0 
+]
+[u S693 . 1 `S682 1 . 1 0 `S691 1 . 1 0 ]
+[v _IOCAFbits IOCAFbits `VES693  1 e 1 @915 ]
+"18028
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+"87 /home/simonetto/lopielle/firmware.X/main.c
+[v _SYNTH_INSTRUMENT_DESC SYNTH_INSTRUMENT_DESC `DC[16][12]uc  1 e 192 0 ]
+"107
+[v _OPLL_FNUM OPLL_FNUM `DC[12]us  1 e 24 0 ]
+"164
+[v _SYNTH_PARAM_DESC SYNTH_PARAM_DESC `DC[10][13]uc  1 s 130 SYNTH_PARAM_DESC ]
+[s S514 . 2 `uc 1 key 1 0 `uc 1 prio 1 1 :4:0 
+`uc 1 _unused 1 1 :3:4 
+`uc 1 on 1 1 :1:7 
+]
+"186
+[v _chan chan `[8]S514  1 s 16 chan ]
+[s S519 . 1 `uc 1 attack_rate 1 0 :4:0 
+`uc 1 decay_rate 1 0 :4:4 
+]
+"187
+[s S522 . 1 `uc 1 sustain_level 1 0 :4:0 
+`uc 1 release_rate 1 0 :4:4 
+]
+[s S525 . 6 `uc 1 channel 1 0 `uc 1 instrument 1 1 `S519 1 modulator_ad 1 2 `S519 1 carrier_ad 1 3 `S522 1 modulator_sr 1 4 `S522 1 carrier_sr 1 5 ]
+[v _synth synth `S525  1 s 6 synth ]
+"255
+[v _dpy_framebuf dpy_framebuf `VE[32]uc  1 s 32 dpy_framebuf ]
+"259
+[v _dpy_need_update dpy_need_update `VEuc  1 s 1 dpy_need_update ]
+"361
+[v _ctl_status_prev ctl_status_prev `VEuc  1 s 1 ctl_status_prev ]
+[v _ctl_status ctl_status `VEuc  1 s 1 ctl_status ]
+"362
+[v _button_press_ms button_press_ms `VE[4]uc  1 s 4 button_press_ms ]
+"390
+[v _synth_param_cur synth_param_cur `VEuc  1 s 1 synth_param_cur ]
+"391
+[v _synth_param_editing synth_param_editing `VEuc  1 s 1 synth_param_editing ]
+"62 /home/simonetto/lopielle/firmware.X/mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"64
+[v _eusartTxBuffer eusartTxBuffer `VE[8]uc  1 e 8 0 ]
+"65
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"69
+[v _eusartRxBuffer eusartRxBuffer `VE[16]uc  1 e 16 0 ]
+"70
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"58 /home/simonetto/lopielle/firmware.X/mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"610 /home/simonetto/lopielle/firmware.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"613
+[v main@midi_data midi_data `[8]uc  1 a 8 30 ]
+[v main@d d `uc  1 a 1 41 ]
+"612
+[v main@midi_data_len midi_data_len `uc  1 a 1 40 ]
+[v main@msg msg `uc  1 a 1 39 ]
+"613
+[v main@cur_col cur_col `uc  1 a 1 38 ]
+"698
+} 0
+"491
+[v _synth_param_snprint synth_param_snprint `(uc  1 e 1 0 ]
+{
+[v synth_param_snprint@buf buf `*.4uc  1 a 1 wreg ]
+"494
+[v synth_param_snprint@desc desc `*.25DCuc  1 a 2 23 ]
+"495
+[v synth_param_snprint@d d `uc  1 a 1 26 ]
+"493
+[v synth_param_snprint@d2 d2 `uc  1 a 1 22 ]
+[v synth_param_snprint@d1 d1 `uc  1 a 1 21 ]
+"491
+[v synth_param_snprint@buf buf `*.4uc  1 a 1 wreg ]
+[v synth_param_snprint@buf_len buf_len `uc  1 p 1 15 ]
+[v synth_param_snprint@param param `uc  1 p 1 16 ]
+"494
+[v synth_param_snprint@buf buf `*.4uc  1 a 1 25 ]
+"549
+} 0
+"12 /opt/microchip/xc8/v2.00/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"14
+[v strlen@a a `*.25DCuc  1 a 2 4 ]
+"12
+[v strlen@s s `*.25DCuc  1 p 2 0 ]
+"26
+} 0
+"6 /home/simonetto/lopielle/firmware.X/main.c
+[v _sprintn sprintn `(uc  1 e 1 0 ]
+{
+[v sprintn@buf buf `*.4uc  1 a 1 wreg ]
+"8
+[v sprintn@p p `*.4uc  1 a 1 13 ]
+"6
+[v sprintn@buf buf `*.4uc  1 a 1 wreg ]
+[v sprintn@n n `uc  1 p 1 9 ]
+"8
+[v sprintn@buf buf `*.4uc  1 a 1 14 ]
+"26
+} 0
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.4v  1 e 1 0 ]
+{
+[v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
+"8
+[v memcpy@s s `*.25DCuc  1 a 2 5 ]
+"7
+[v memcpy@d d `*.4uc  1 a 1 8 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 7 ]
+"4
+[v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
+[v memcpy@s1 s1 `*.25DCv  1 p 2 0 ]
+[v memcpy@n n `ui  1 p 2 2 ]
+"11
+[v memcpy@d1 d1 `*.4v  1 a 1 9 ]
+"18
+} 0
+"15 /opt/microchip/xc8/v2.00/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"112 /home/simonetto/lopielle/firmware.X/main.c
+[v _opll_reset opll_reset `(v  1 e 1 0 ]
+{
+"119
+} 0
+"189
+[v _opll_play opll_play `(v  1 e 1 0 ]
+{
+[v opll_play@key key `uc  1 a 1 wreg ]
+"191
+[v opll_play@n n `us  1 a 2 13 ]
+"192
+[v opll_play@ch ch `uc  1 a 1 18 ]
+[v opll_play@i i `uc  1 a 1 17 ]
+[v opll_play@oct oct `uc  1 a 1 15 ]
+"189
+[v opll_play@key key `uc  1 a 1 wreg ]
+[v opll_play@vel vel `uc  1 p 1 9 ]
+"194
+[v opll_play@key key `uc  1 a 1 16 ]
+"246
+} 0
+"121
+[v _opll_write opll_write `(v  1 e 1 0 ]
+{
+[v opll_write@addr addr `uc  1 a 1 wreg ]
+[v opll_write@addr addr `uc  1 a 1 wreg ]
+[v opll_write@val val `uc  1 p 1 0 ]
+"124
+[v opll_write@addr addr `uc  1 a 1 1 ]
+"140
+} 0
+"5 /opt/microchip/xc8/v2.00/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 /opt/microchip/xc8/v2.00/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+{
+[v memset@dest dest `*.4v  1 a 1 wreg ]
+"7
+[v memset@k k `ui  1 a 2 6 ]
+"6
+[v memset@s s `*.4uc  1 a 1 9 ]
+"4
+[v memset@dest dest `*.4v  1 a 1 wreg ]
+[v memset@c c `i  1 p 2 0 ]
+[v memset@n n `ui  1 p 2 2 ]
+"6
+[v memset@dest dest `*.4v  1 a 1 8 ]
+"90
+} 0
+"315 /home/simonetto/lopielle/firmware.X/main.c
+[v _dpy_update dpy_update `(v  1 e 1 0 ]
+{
+"317
+[v dpy_update@i i `uc  1 a 1 3 ]
+"318
+[v dpy_update@c c `uc  1 a 1 2 ]
+"337
+} 0
+"273
+[v _dpy_write_data dpy_write_data `(v  1 e 1 0 ]
+{
+[v dpy_write_data@x x `uc  1 a 1 wreg ]
+[v dpy_write_data@x x `uc  1 a 1 wreg ]
+"275
+[v dpy_write_data@x x `uc  1 a 1 0 ]
+"283
+} 0
+"285
+[v _dpy_reset dpy_reset `(v  1 e 1 0 ]
+{
+"295
+} 0
+"297
+[v _dpy_cursor_show dpy_cursor_show `(v  1 e 1 0 ]
+{
+"301
+} 0
+"309
+[v _dpy_cursor_move dpy_cursor_move `(v  1 e 1 0 ]
+{
+[v dpy_cursor_move@row row `uc  1 a 1 wreg ]
+[v dpy_cursor_move@row row `uc  1 a 1 wreg ]
+[v dpy_cursor_move@col col `uc  1 p 1 4 ]
+"311
+[v dpy_cursor_move@row row `uc  1 a 1 6 ]
+"313
+} 0
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"303 /home/simonetto/lopielle/firmware.X/main.c
+[v _dpy_cursor_hide dpy_cursor_hide `(v  1 e 1 0 ]
+{
+"307
+} 0
+"261
+[v _dpy_write_instruction dpy_write_instruction `(v  1 e 1 0 ]
+{
+[v dpy_write_instruction@x x `uc  1 a 1 wreg ]
+[v dpy_write_instruction@x x `uc  1 a 1 wreg ]
+"263
+[v dpy_write_instruction@x x `uc  1 a 1 0 ]
+"271
+} 0
+"382
+[v _ctl_status_reset ctl_status_reset `(v  1 e 1 0 ]
+{
+"386
+} 0
+"370
+[v _ctl_status_update ctl_status_update `(v  1 e 1 0 ]
+{
+"372
+[v ctl_status_update@i i `uc  1 a 1 2 ]
+"380
+} 0
+"50 /home/simonetto/lopielle/firmware.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"76
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64 /home/simonetto/lopielle/firmware.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"82
+} 0
+"57 /home/simonetto/lopielle/firmware.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"108
+} 0
+"60 /home/simonetto/lopielle/firmware.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
+"75 /home/simonetto/lopielle/firmware.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"111
+} 0
+"211
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"213
+} 0
+"215
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"217
+} 0
+"118
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(uc  1 e 1 0 ]
+{
+"121
+} 0
+"128
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+{
+"130
+[v EUSART_Read@readValue readValue `uc  1 a 1 1 ]
+"146
+} 0
+"52 /home/simonetto/lopielle/firmware.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"78
+} 0
+"551 /home/simonetto/lopielle/firmware.X/main.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"553
+[v TMR0_ISR@ctl_encoder_dir ctl_encoder_dir `c  1 a 1 8 ]
+"554
+[v TMR0_ISR@i i `uc  1 a 1 7 ]
+"597
+} 0
+"370
+[v i1_ctl_status_update ctl_status_update `(v  1 e 1 0 ]
+{
+[v i1ctl_status_update@i ctl_status_update `uc  1 a 1 2 ]
+"380
+} 0
+"412
+[v _synth_param_change synth_param_change `(uc  1 e 1 0 ]
+{
+[v synth_param_change@param param `uc  1 a 1 wreg ]
+"414
+[v synth_param_change@d d `uc  1 a 1 4 ]
+"412
+[v synth_param_change@param param `uc  1 a 1 wreg ]
+[v synth_param_change@amount amount `c  1 p 1 0 ]
+[v synth_param_change@param param `uc  1 a 1 3 ]
+"489
+} 0
+"172 /home/simonetto/lopielle/firmware.X/mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"189
+} 0
+"191
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"209
+} 0

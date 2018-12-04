@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name lopielle_lib)(type KiCad)(uri "$(KIPRJMOD)/lopielle_lib.pretty")(options "")(descr ""))
+)
